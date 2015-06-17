@@ -1,0 +1,37 @@
+.container {
+  margin: 20px auto;
+  width: 600px;
+  padding: 0px 20px 20px 20px;
+  border: 1px dotted black;
+}
+th {
+  text-align: left;
+}
+
+#row1{
+  border:5px solid #000;
+}
+
+#row2{
+  border:5px solid #000;
+}
+
+#row3{
+  border:5px solid #000;
+}
+
+
+.square{
+    width:100px;
+    height:100px;
+}
+
+.v{
+    border-left:5px solid #000;
+    border-right:5px solid #000;
+}
+
+.h{
+    border-top:5px solid #000;
+    border-bottom:5px solid #000;
+}

@@ -1,0 +1,35 @@
+
+<div class="container">
+
+  <h1>Join the table with our player</h1>
+
+  <div id="new_table">
+    <form action="/games" method= "POST" data-remote='true' >
+      <input id="create" type="submit" value="Create New Table" name="new_table">
+    </form>
+  </div>
+  <br>
+
+  <table style="width:80%">
+    <tr>
+      <td>Game Id</td>
+      <td>Player</td>
+      <td>Join</td>
+    </tr>
+    <% @games.each do |game| %>
+      <tr>
+        <td><%= game.id %></td>
+        <td><%= User.find(game.player1_id).name %></td>
+        <td>
+          <form action="/game/<%= game.id %>/join" method= "POST" data-remote='true' >
+            <input id="create" type="submit" value="Join" name="new_table">
+          </form>
+        </td>
+      </tr>
+    <% end %>
+
+  </table>
+
+</div>
+<script>
+</script>
